@@ -12,9 +12,24 @@
       "height": 480
     },
     {
+      "label": "phone-landscape",
+      "width": 480,
+      "height": 320
+    },
+    {
+      "label": "iphone-x",
+      "width": 375,
+      "height": 812
+    },
+    {
       "label": "tablet",
       "width": 1024,
       "height": 768
+    },
+    {
+      "label": "tablet-landscape",
+      "width": 768,
+      "height": 1024
     }
   ],
   "onBeforeScript": "puppet/onBefore.js",
@@ -54,6 +69,6 @@
   },
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
-  "debug": false,
+  "debug": true,
   "debugWindow": false
 }
