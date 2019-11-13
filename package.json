@@ -1,0 +1,20 @@
+{
+  "name": "html-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bst": "backstop test",
+    "bsa": "backstop approve",
+    "ls": "lite-server --config=bs-config.json",
+    "rls": "lite-server --config=bs-report-config.json",
+    "dev": "concurrently \"npm:ls\" \"npm:rls\"",
+    "mon": "concurrently nodemon npm:dev"
+  },
+  "dependencies": {
+    "backstopjs": "^4.3.2",
+    "concurrently": "^5.0.0",
+    "lite-server": "^2.5.4",
+    "nodemon": "^1.19.4"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "watch": [ "./src/**/*.{html,htm,css,js}" ],
+  "ext": "*",
+  "exec": "yarn bst",
+  "ignore": ["*.test.js", "fixtures/*"],
+  "execMap": {
+    "html": "yarn bst"
+  }
+}

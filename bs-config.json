@@ -1,0 +1,11 @@
+{
+  "port": 3001,
+  "ui": false,
+  "injectChanges": false,
+  "notify": false,
+  "files": [ "./src/**/*.{html,htm,css,js}" ],
+  "watchOptions": { "ignored": "node_modules" },
+  "server": {
+    "baseDir": "./src"
+  }
+}

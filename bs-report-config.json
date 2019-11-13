@@ -1,0 +1,14 @@
+{
+  "port": 3002,
+  "ui": false,
+  "injectChanges": false,
+  "files": [ "./backstop_data/html_report/*.{html,htm,css,js}" ],
+  "watchOptions": { "ignored": "node_modules" },
+  "server": {
+    "baseDir": "./backstop_data/html_report",
+    "routes": {
+      "/bitmaps_reference": "backstop_data/bitmaps_reference",
+      "/bitmaps_test": "backstop_data/bitmaps_test"
+    }
+  }
+}
