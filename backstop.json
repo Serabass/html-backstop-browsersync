@@ -1,5 +1,5 @@
 {
-  "id": "backstop_default",
+  "id": "default",
   "viewports": [
     {
       "label": "desktop",
@@ -36,7 +36,7 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
+      "label": "Homepage",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
       "url": "http://localhost:3001/",
       "referenceUrl": "",
@@ -55,7 +55,7 @@
       "requireSameDimensions": true
     },
     {
-      "label": "BackstopJS Second page",
+      "label": "Second page",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
       "url": "http://localhost:3001/index-2page.html",
       "referenceUrl": "",
@@ -89,5 +89,6 @@
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
   "debug": true,
-  "debugWindow": false
+  "debugWindow": false,
+  "fileNameTemplate": "{configId}_{scenarioLabel}_{selectorIndex}_{selectorLabel}_{viewportIndex}_{viewportLabel}"
 }
